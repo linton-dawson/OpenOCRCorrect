@@ -2429,3 +2429,21 @@ void MainWindow::on_actionEnglish_triggered()
 {
     HinFlag = 0 , SanFlag = 0;
 }
+
+void MainWindow::on_actionBold_Unbold_triggered()
+{
+    QTextCharFormat fmt;
+
+    //get text under cursor
+    QTextCursor cursor = ui->textBrowser->textCursor();
+
+    //check if bold or not
+    if(!cursor.charFormat().font().bold())
+        fmt.setFontWeight(QFont::Bold);
+    else
+        fmt.setFontWeight(QFont::Medium);
+
+    //cursor.mergeCharFormat(fmt);
+    //below line calls above comment so no need for above one
+    ui->textBrowser->mergeCurrentCharFormat(fmt);
+}

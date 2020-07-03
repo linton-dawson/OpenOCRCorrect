@@ -163,6 +163,7 @@ p, li { white-space: pre-wrap; }
     <addaction name="actionLoadConfusions"/>
     <addaction name="actionSugg"/>
     <addaction name="actionToSlp1"/>
+    <addaction name="actionBold_Unbold"/>
    </widget>
    <widget class="QMenu" name="menuCreateReports">
     <property name="title">
@@ -242,6 +243,7 @@ p, li { white-space: pre-wrap; }
    <addaction name="separator"/>
    <addaction name="actionToDevanagari"/>
    <addaction name="separator"/>
+   <addaction name="actionBold_Unbold"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
@@ -488,6 +490,11 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="toolTip">
     <string>English</string>
+   </property>
+  </action>
+  <action name="actionBold_Unbold">
+   <property name="text">
+    <string>Bold/Unbold</string>
    </property>
   </action>
  </widget>
